@@ -27,7 +27,7 @@ fun main() {
     // println imprime en una nueva línea. El $ se usa para introducir las variables.
     println("Entero: $numeroEntero, Decimal: $numeroDecimal, Num largo: $numeroLargo, Carácter: $caracter, Cadena: $cadena, Boolean: $boolean")
 
-    // If - Else if - Else
+    // >>> If - Else if - Else <<<
     val edad = 19
     if (edad == 0) {
         println("Acabas de nacer")
@@ -37,7 +37,7 @@ fun main() {
         println("Eres mayor de edad")
     }
 
-    // When (switch en python)
+    // >>> When (switch en python) <<<
     val dia = 7
     val nombreDia = when (dia) {
         1 -> "Lunes"
@@ -51,14 +51,14 @@ fun main() {
     }
     println("Hoy es $nombreDia")
 
-    // Declaración de lista mutable
+    // >>> Declaración de lista mutable <<<
     var miLista = mutableListOf<Int>(1, 2, 3, 4, 5)
 
-    // Declaración de lista inmutable
+    // >>> Declaración de lista inmutable <<<
     var otraLista = listOf(1, 2, 3, 4, 5)
 
 
-    // Bucles
+    // >>> Bucles <<<
     // For
     // Recorrer un rango
     for (i in 1..5) {
@@ -77,7 +77,7 @@ fun main() {
         contador++
     }
 
-    // Funciones
+    // >>> Funciones <<<
     fun suma(a: Int, b: Int): Int {
         return a + b
     }
@@ -87,4 +87,17 @@ fun main() {
 
     println("Suma de 6 y 5 es: ${suma(6, 5)}")
     println("Resta de 9 y 4 es: ${resta(9, 4)}")
+
+
+    // >>> Clases <<<
+    class Persona(val nombre: String, var edad: Int) {
+        // Un método
+        fun informacion() {
+            println("Nombre: $nombre, Edad: $edad")
+        }
+    }
+
+    // Crear objeto de una clase
+    val persona = Persona("Fer", 25)
+    persona.informacion()
 }
