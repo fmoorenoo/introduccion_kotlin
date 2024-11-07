@@ -51,4 +51,29 @@ fun main() {
     }
     println("Hoy es $nombreDia")
 
+    // Declaración de lista mutable
+    var miLista = mutableListOf<Int>(1, 2, 3, 4, 5)
+
+    // Declaración de lista inmutable
+    var otraLista = listOf(1, 2, 3, 4, 5)
+
+
+    // Bucles
+    // For
+    // Recorrer un rango
+    for (i in 1..5) {
+        println("Usuario $i")
+    }
+
+    // Recorrer un iterable
+    for (i in miLista) {
+        println("Usuario $i")
+    }
+
+    // While
+    var contador = 1
+    while (contador <= 3) {
+        println("Contador: $contador")
+        contador++
+    }
 }
