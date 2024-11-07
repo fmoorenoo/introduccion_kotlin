@@ -36,4 +36,19 @@ fun main() {
     } else {
         println("Eres mayor de edad")
     }
+
+    // When (switch en python)
+    val dia = 7
+    val nombreDia = when (dia) {
+        1 -> "Lunes"
+        2 -> "Martes"
+        3 -> "Miércoles"
+        4 -> "Jueves"
+        5 -> "Viernes"
+        6 -> "Sábado"
+        7 -> "Domingo"
+        else -> "Día no válido"
+    }
+    println("Hoy es $nombreDia")
+
 }
