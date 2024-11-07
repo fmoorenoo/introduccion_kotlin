@@ -76,4 +76,15 @@ fun main() {
         println("Contador: $contador")
         contador++
     }
+
+    // Funciones
+    fun suma(a: Int, b: Int): Int {
+        return a + b
+    }
+
+    // Función en una linea
+    fun resta(a: Int, b: Int) = a - b
+
+    println("Suma de 6 y 5 es: ${suma(6, 5)}")
+    println("Resta de 9 y 4 es: ${resta(9, 4)}")
 }
