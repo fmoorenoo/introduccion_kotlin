@@ -1,3 +1,5 @@
+import kotlin.random.Random
+
 // Introducción a Kotlin
 
 
@@ -24,4 +26,14 @@ fun main() {
 
     // println imprime en una nueva línea. El $ se usa para introducir las variables.
     println("Entero: $numeroEntero, Decimal: $numeroDecimal, Num largo: $numeroLargo, Carácter: $caracter, Cadena: $cadena, Boolean: $boolean")
+
+    // If - Else if - Else
+    val edad = 19
+    if (edad == 0) {
+        println("Acabas de nacer")
+    } else if (edad < 18) {
+        println("Eres menor de edad")
+    } else {
+        println("Eres mayor de edad")
+    }
 }
